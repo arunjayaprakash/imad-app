@@ -9,7 +9,7 @@ var Pool = new Pool(config);
 var config = {
     user:'arun77733',
     database:'arun77733',
-    host:'db.imad.hasura-app.io',
+    host:'arun77733.imad.hasura-app.io',
     port:'5432',
     password:process.env.DB_PASSWORD
 };
