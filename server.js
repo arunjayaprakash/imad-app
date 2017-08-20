@@ -16,12 +16,12 @@ var config = {
 
 
 app.get('/test-db', function(req,res){
-    pool.query('SELECT * FROM test', function (err,result){
+    pool.query('SELECT * FROM test', function (err, result){
         if (err) {
             res.status(500).send(err,toString());
                  }
         else    {
-                res.send(JSON.stringify(result));
+                res.send(JSON.stringify(result.rows));
                  }
         
         
